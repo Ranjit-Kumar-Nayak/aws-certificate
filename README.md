@@ -13,3 +13,10 @@ env | grep 'aws'
      gp env AWS_DEFAULT_REGION=ap-south-1 -->
  <!--  find aws env vars from google use it to loghin the credential -->
 <!--  aws auto prompt configure-->
+
+<!-- before: |      -? Tthis pile ( | ) meaning run all command in a single line
+     cd /workspace
+     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+     unzip awscliv2.zip
+     sudo ./aws/install
+     cd $THEIA_WORKSPACE_ROOT -->
