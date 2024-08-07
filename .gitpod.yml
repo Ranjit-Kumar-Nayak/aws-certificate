@@ -1,10 +1,10 @@
 # List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
 tasks:
   - name: aws-cli
-    # env:
-      #  aws_cli_auto_prompt=on-partial
-    before:
-    #  cd /workspace
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial
+    before: | 
+     cd /workspace
      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
      unzip awscliv2.zip
      sudo ./aws/install
